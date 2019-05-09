@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAjaxTutorial", "ApiAjaxTutorial\ApiAjaxTutorial.csproj", "{FCD29E11-7AE1-4E6B-A032-53A152125D93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCD29E11-7AE1-4E6B-A032-53A152125D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD29E11-7AE1-4E6B-A032-53A152125D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD29E11-7AE1-4E6B-A032-53A152125D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD29E11-7AE1-4E6B-A032-53A152125D93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC024203-F701-4ED3-A513-BC90235B51BD}
+	EndGlobalSection
+EndGlobal

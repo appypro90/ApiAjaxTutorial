@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Student";
+}
+
+<h2>Student</h2>
+
+@using (Html.BeginForm())
+{
+    <button id="btnGetStudent">Get Student</button><br/>
+    <button id="btnGetStudent1">Get Student</button><input id="txtstudentID" type="text" value="1"/><br />
+    <button id="btnAddStudent">Add Student</button><br />
+    <button id="btnUpdateStudent">Update Student</button><br />
+    <button id="btnDelStudent">Delete Student</button><input id="txtstudentIDtodelete" type="text" value="1" /><br />
+    <div id="massage"></div>
+
+}
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(function () {
+            $('#btnGetStudent').on('click', function () {
+                $.ajax({
+                    type: 'GET',
+                    url: '/api/StudentsAPI',
+                    datatype : 'json',
+                    cache: false,
+                    success: function(data) {
+                        var output = "";
+                        for (i = 0; i < data.length; i++) {
+                            output += data[i].studentName;
+                        }
+                        $('#massage').html(output);
+
+                    })
+                })
+                    .success(function (data) {
+                        var output = "";
+                        for (i = 0; i < data.length; i++) {
+                            output += data[i].studentName;
+                        }
+                        $('#massage').html(output);
+
+                    })
+            })
+        })
+    </script>
+
+    }
+
